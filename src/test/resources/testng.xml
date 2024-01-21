@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="utils.SuiteListener"></listener>
+    </listeners>
+    <test thread-count="5" name="TestUIAutomationFr">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="TestUi">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                </methods>
+            </class> <!-- TestUi -->
+        </classes>
+    </test> <!-- TestUIAutomationFr -->
+</suite> <!-- Default Suite -->
